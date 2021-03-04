@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Text Editor</title>
+</head>
+<body>
+	<section class="text-editor">
+		<div class="text-editor__inner">
+			<div class="text-editor__content-inner">
+				<p class="text-editor__content-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aliquam rerum. Totam dolorem unde omnis molestias, voluptatibus id blanditiis vero ipsam tenetur aliquam consequatur ea nisi, earum magni libero.
+				</p>
+				<p class="text-editor__content-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aliquam rerum. Totam dolorem unde omnis molestias, voluptatibus id blanditiis vero ipsam tenetur aliquam consequatur ea nisi, earum magni libero.
+				</p>
+				<p class="text-editor__content-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aliquam rerum. Totam dolorem unde omnis molestias, voluptatibus id blanditiis vero ipsam tenetur aliquam consequatur ea nisi, earum magni libero.
+				</p>
+				<p class="text-editor__content-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aliquam rerum. Totam dolorem unde omnis molestias, voluptatibus id blanditiis vero ipsam tenetur aliquam consequatur ea nisi, earum magni libero.
+				</p>
+				<p class="text-editor__content-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aliquam rerum. Totam dolorem unde omnis molestias, voluptatibus id blanditiis vero ipsam tenetur aliquam consequatur ea nisi, earum magni libero.
+				</p>
+			</div>
+			<form class="text-editor-toolbar">
+				<div class="toolbar__inner">
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							font size
+						</p>
+						<select class="toolbar__item-font-size-select" id="fontSizeSelect" name="fontSize">
+							<option class="toolbar__item-font-size" value="8px">8px</option>
+							<option class="toolbar__item-font-size" value="16px">16px</option>
+							<option class="toolbar__item-font-size" value="24px">24px</option>
+							<option class="toolbar__item-font-size" value="30px">30px</option>
+							<option class="toolbar__item-font-size" value="36px">36px</option>
+						</select>
+					</div>
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							color
+						</p>
+						<div>
+							<input id="textColorSelect"  type="color" name="color">
+							<label for="text-color">tap to change color</label>
+					</div>
+					</div>
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							font weight
+						</p>
+							<select class="toolbar__item-font-weight-select" name="fontWeight" id="fontWeightSelect">
+							<option class="toolbar__item-font-weight" value="400">400</option>
+							<option class="toolbar__item-font-weight" value="600">600</option>
+							<option class="toolbar__item-font-weight" value="900">900</option>
+						</select>
+					</div>
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							font style
+						</p>
+							<select class="toolbar__item-font-style-select" name="fontStyle" id="fontStyleSelect">
+							<option class="toolbar__item-font-style" value="normal">normal</option>
+							<option class="toolbar__item-font-style" value="italic">italic</option>
+						</select>
+					</div>
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							letter spacing
+						</p>
+							<select class="toolbar__item-letter-spacing-select" name="letterSpacing" id="letterSpacingSelect">
+							<option class="toolbar__item-letter-spacing" value="normal">normal</option>
+							<option class="toolbar__item-letter-spacing" value="2px">2px</option>
+							<option class="toolbar__item-letter-spacing" value="5px">5px</option>
+							<option class="toolbar__item-letter-spacing" value="10px">10px</option>
+						</select>
+					</div>
+					<div class="toolbar__item">
+						<p class="toolbar__item-title">
+							line height
+						</p>
+							<select class="toolbar__item-line-height-select" name="lineHeight" id="lineHeightSelect">
+								<option class="toolbar__item-line-height" value="normal">normal</option>
+								<option class="toolbar__item-line-height" value="36px">36px</option>
+								<option class="toolbar__item-line-height" value="46px">46px</option>
+								<option class="toolbar__item-line-height" value="56px">56px</option>
+							</select>
+					</div>
+					<button class="toolbar__reset-button" id="resetButton">Reset</button>
+				</div>
+			 </form>
+		</div>
+	</section>
+	<script 
+	src="https://code.jquery.com/jquery-3.6.0.min.js" 
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+	crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
